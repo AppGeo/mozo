@@ -1,6 +1,6 @@
 var test = require('tape');
 
-var encrypter = require('./');
+var mozo = require('./');
 
 test('first', function (t) {
   t.plan(2);
@@ -10,9 +10,9 @@ test('first', function (t) {
     array: ['is', 'here'],
     number: 1
   };
-  encrypter.objectEncrypter(obj, password).then(function (buf) {
+  mozo.objectEncrypter(obj, password).then(function (buf) {
     t.ok(Buffer.isBuffer(buf), 'is a buffer');
-    return encrypter.objectDecrypter(buf, password);
+    return mozo.objectDecrypter(buf, password);
   }).then(function (o) {
     t.deepEquals(o, obj, 'are equal');
   }).catch(function (e) {

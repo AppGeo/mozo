@@ -1,5 +1,5 @@
 {
-  "name": "object-encrypter",
+  "name": "mozo",
   "version": "0.0.0",
   "description": "encrypt an object",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/appgeo/object-encrypter.git"
+    "url": "git://github.com/appgeo/mozo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/appgeo/object-encrypter/issues"
+    "url": "https://github.com/appgeo/mozo/issues"
   },
-  "homepage": "https://github.com/appgeo/object-encrypter",
+  "homepage": "https://github.com/appgeo/mozo",
   "dependencies": {
     "triplesec": "^3.0.19",
     "bluebird": "^2.3.5"
